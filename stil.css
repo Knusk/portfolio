@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300;900&family=Zen+Kurenaido&display=swap');
+
+body {
+  background-color: #93ada9;
+}
+
+p {
+font-family: 'Zen Kurenaido', sans-serif;
+}
+
+h1, a{
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  font-weight: 300;
+}
+
+h1 {
+  letter-spacing: 0.5em;
+}
+
+#main{
+  background-color: #b0f4d0;
+  padding: 40px;
+  width: 600px;
+  height: 600px;
+  margin: 50px auto;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.meny ul li {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+  width: 100px;
+  margin: auto;
+  background-color: #93ada9;
+  margin-bottom: 10px;
+  padding: 2px;
+  font-weight: 900;
+  border-radius: 4px;
+  font-size: 0.8em;
+}
+
+.meny ul li:hover
+{
+  background-color: #777;
+}
+
+.meny ul {
+  padding: 0;
+  align-items: center;
+  margin: auto;
+}
+
+a{
+  text-decoration: none;
+  color: #233;
+}
+
+.mengdetekst{
+  max-width: 300px;
+  text-align: justify;
+  margin:auto;
+  margin-top: 50px;
+}
