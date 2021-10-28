@@ -28,44 +28,55 @@ h1 {
   position: relative;
 }
 
-.meny ul li {
-  list-style-type: none;
-  padding: 0;
-  text-align: center;
-  width: 100px;
-  margin: auto;
-  background-color: #93ada9;
-  margin-bottom: 10px;
-  padding: 2px;
-  font-weight: 900;
-  border-radius: 4px;
-  font-size: 0.8em;
-}
+
 
 .meny {
-  position: absolute;
+  position: relative;
   top: 10px;
   left: 0;
-  display: inline-block;
-  float: left;
 }
 
 .meny ul {
   padding: 0;
   align-items: center;
+  background-color: none;
+  width: 300px;
+}
+
+.active a {
+  font-weight: 900;
+}
+
+.meny ul li {
+  list-style-type: none;
+  padding: 0;
+  text-align: right;
+  width: auto;
   margin: auto;
-  background-color: #abc;
+  background-color: none;
+  margin-bottom: 10px;
+  padding: 2px;
+  font-weight: 900;
+  border-radius: 4px;
+  font-size: 1em;
 }
 
-.meny ul li:hover {
-  background-color: #777;
+.meny ul li.active {
+
+  /* background-color: # */
+  color: #333;
 }
 
-.meny ul li a {
-  width: 100%;
-  height: 100%;
-  display: block;
+.meny ul li a:hover {
+  font-weight: 900;
 }
+
+.meny ul li.active:hover {
+  cursor: none;
+  background-color: none;
+}
+
+
 
 a {
   text-decoration: none;
@@ -80,41 +91,47 @@ a {
   margin: auto;
   margin-top: 10px;
   padding: 0px;
-  border: 1px solid red;
 }
 
 .circle_shape {
-  position: relative;
+  position: static;
   float: left;
+  top: 100px;
+  left:100px;
+  margin: 10px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  shape-outside: circle(50%);
+  background-color: #ccc;
+
+}
+
+.meny_circle{
+  position: relative;
+  float: right;
   top: 0;
   left: 0;
-  margin: 10px;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
-  shape-outside: circle();
-  background-color: #ccc;
+  background-color: none;
+  shape-outside: circle(44.5% at 88px 88px);
+    border-left: 1px solid #666;
+    shape-margin: 10px:
+}
+
+#meny_boks{
+  position: absolute;
+  top: 0;
+  left: -300px;
+  width: 400px;
 }
 
 .dino img {
-  position: absolute;
+  position: fixed;
   right: auto;
   left: 50%;
-  width: 300px;
+  width: 500px;
   bottom: 0;
-}
-
-.active a {
-  font-weight: 900;
-}
-
-ul li.active {
-  border-left: 5px solid #666;
-  /* background-color: # */
-  color: #666;
-}
-
-ul li.active:hover {
-  background-color: #93ada9;
-  cursor: none;
 }
