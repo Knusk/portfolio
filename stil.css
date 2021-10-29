@@ -19,7 +19,7 @@ h1 {
 
 #main {
   background-color: #b0f4d0;
-  padding: 40px;
+  padding: 50px;
   width: 600px;
   height: 600px;
   margin: 50px auto;
@@ -28,18 +28,22 @@ h1 {
   position: relative;
 }
 
-
+#meny_boks {
+  position: absolute;
+  top: 0;
+  left: -250px;
+  width: 400px;
+}
 
 .meny {
   position: relative;
-  top: 10px;
-  left: 0;
+  top: 0;
+  left: -20px;
 }
 
 .meny ul {
   padding: 0;
   align-items: center;
-  background-color: none;
   width: 300px;
 }
 
@@ -53,16 +57,12 @@ h1 {
   text-align: right;
   width: auto;
   margin: auto;
-  background-color: none;
-  margin-bottom: 10px;
-  padding: 2px;
+  margin-bottom: 15px;
   font-weight: 900;
-  border-radius: 4px;
   font-size: 1em;
 }
 
 .meny ul li.active {
-
   /* background-color: # */
   color: #333;
 }
@@ -76,8 +76,6 @@ h1 {
   background-color: none;
 }
 
-
-
 a {
   text-decoration: none;
   color: #233;
@@ -86,7 +84,7 @@ a {
 .mengdetekst {
   position: relative;
   top: 0;
-  max-width: 800px;
+  max-width: 400px;
   text-align: left;
   margin: auto;
   margin-top: 10px;
@@ -96,18 +94,19 @@ a {
 .circle_shape {
   position: static;
   float: left;
-  top: 100px;
-  left:100px;
   margin: 10px;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   shape-outside: circle(50%);
   background-color: #ccc;
-
+  background-image: url("bilder/dino.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0 30px;
 }
 
-.meny_circle{
+.meny_circle {
   position: relative;
   float: right;
   top: 0;
@@ -115,23 +114,14 @@ a {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background-color: none;
-  shape-outside: circle(44.5% at 88px 88px);
-    border-left: 1px solid #666;
-    shape-margin: 10px:
-}
-
-#meny_boks{
-  position: absolute;
-  top: 0;
-  left: -300px;
-  width: 400px;
+  shape-outside: circle(40.4% at 95px 99px);
+  border-left: 1px solid #666;
+  shape-margin: 10px;
 }
 
 .dino img {
   position: fixed;
-  right: auto;
-  left: 50%;
+  right: 100px;
   width: 500px;
   bottom: 0;
 }
