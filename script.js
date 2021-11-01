@@ -4,7 +4,7 @@ let anim_1 = document.getElementById("meny_circle");
 // moves over the unordered list
 anim_1.addEventListener("mouseover", function( event ) {
   // highlight the mouseenter target
-  event.target.animate.iterations=1;
+  // event.target.animate.iterations=1;
   event.target.style.borderWidth="4px";
 
   // reset the color after a short delay
