@@ -106,7 +106,7 @@ a {
   background-position:center;
 }
 
-.meny_circle {
+#meny_circle {
   position: relative;
   float: right;
   top: 0;
@@ -118,6 +118,9 @@ a {
   /* border: 3px solid #f66; */
   border-right: none;
   shape-margin: 10px;
+  animation-duration: 1s;
+  animation-name: anim_1;
+  animation-iteration-count: 5;
 }
 
 .meny_border {
@@ -136,4 +139,13 @@ a {
   right: 100px;
   width: 500px;
   bottom: 0;
+}
+
+@keyframes anim_1 {
+  from {
+    left: 0%;
+  }
+  to {
+    left:50%;
+  }
 }
