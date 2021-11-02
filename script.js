@@ -3,7 +3,7 @@ let my_target = document.getElementById("meny_border");
 
 // This handler will be executed only once when the cursor
 // moves over the unordered list
-anim.addEventListener("mouseover", function(event) {
+anim.addEventListener("mouseenter", function(event) {
 
   my_target.style.animation="anim_1 2s";
   console.log("mouseover ...");
