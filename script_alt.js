@@ -1,4 +1,4 @@
-let anim = document.getElementById("meny_boks");
+let anim = document.getElementById("meny_boks_alt");
 let my_target_1 = document.getElementById("meny_border_1");
 let my_target_2 = document.getElementById("meny_border_2");
 
