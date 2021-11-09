@@ -210,3 +210,10 @@ a {
   margin-bottom: 10px;
   list-style-type: square;
 }
+#foto{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 2400px;
+  margin-left: 0;
+}
