@@ -5,7 +5,7 @@ body {
   background-color: #8bc;
   margin-top: 50px;
 }
-html {
+* {
 	scroll-behavior: smooth;
 }
 p {
@@ -30,8 +30,8 @@ h1 {
   border-radius: 50%;
   text-align: center;
   position: relative;
-  overflow: scroll;
-  scroll-behavior: smooth;
+  overflow: hidden;
+
 }
 
 #meny_boks{
@@ -100,7 +100,7 @@ h1 {
   transform: translate(-50%);
 }
 
-#arbeider{
+#arbeider, #kontakt,#programmering,#foto,#start{
   height: 600px;
 }
 

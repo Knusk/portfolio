@@ -7,62 +7,65 @@
 
 
   <link rel="stylesheet" href="stil.css">
+<script type="text/javascript" src="script.js">
 
-  <script>
-    function myFunction(elmnt) {
-      elmnt.scrollTo({
-        top: 600,
-        left: 100,
-        behavior: 'smooth'
-      });
-    }
-  </script>
+</script>
+
 </head>
 
 <body>
-  <div id="start">
-    <div id="meny_boks">
-      <div id="meny_circle">
-        <div id="meny_border_1">
-          <div id="meny_border_2"></div>
-        </div>
-      </div>
-      <div class="meny">
-        <ul>
-          <li><a href="#">Start</a></li>
-          <li><a href="#">Arbeider</a></li>
-          <li><a href="#">Programmering</a></li>
-          <li><a href="#">Foto</a></li>
-          <li><a href="#">Kontakt</a></li>
-        </ul>
+
+  <div id="meny_boks">
+    <div id="meny_circle">
+      <div id="meny_border_1">
+        <div id="meny_border_2"></div>
       </div>
     </div>
+    <div class="meny">
+      <ul>
+        <li><a href="#start">Start</a></li>
+        <li><a href="#arbeider">Arbeider</a></li>
+        <li><a href="#programmering">Programmering</a></li>
+        <li><a href="#foto">Foto</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </div>
+  </div>
 
-    <div id="main">
+  <div id="main">
+    <div id="start">
       <h1>Portfolio</h1>
       <div class="circle_shape"></div>
-
-      <p onclick="myFunction(this)">Click to scroll</p>
-
       <div class="mengdetekst">
 
         <p>Her skal det stå masse informasjon om meg, hva jeg driver med, hva jeg liker å jobbe med, og hva jeg synes jeg er god til. Hvis vi er heldige med været, så kan vi øve litt på drageløping også!
           Her skal det stå masse informasjon om meg, hva jeg driver med, hva jeg liker å jobbe med, og hva jeg synes jeg er god til. Hvis vi er heldige med været, så kan vi øve litt på drageløping også!</p>
 
         <p>Her skal det stå masse informasjon om meg, hva jeg driver med, hva jeg liker å jobbe med, og hva jeg synes jeg er god til. Hvis vi er heldige med været, så kan vi øve litt på drageløping også!</p>
-
-        <div class="dino"><img src="bilder/dino.png" alt="dino"></div>
       </div>
-      <div id="arbeider">
-        <h1>Arbeider</h1>
-        <img src="bilder/selvportrett.svg">
-      </div>
-      <div id="programmering">
-        <h1>Programmering</h1>
-        <img src="bilder/selvportrett.svg">
-      </div>
+      <div class="dino"><img src="bilder/dino.png" alt="dino"></div>
     </div>
-    <script src="script.js"></script>
+    <div id="arbeider">
+      <h2>Arbeider</h1>
+        <img src="bilder/selvportrett.svg">
+    </div>
+    <div id="programmering">
+      <h2>Programmering</h1>
+        <img src="bilder/selvportrett.svg">
+    </div>
+    <div id="kontakt">
+      <h2>Kontakt</h2>
+      <ul>
+        <li>For å kontakte meg kan du sende meg en e-post på knut-einar at rsd punktum no</li>
+        <li>Eller så kan du ringe meg på 48009816</li>
+        <li>Eller så kan du komme til Kåres vei 2, 1456 Nesoddtangen, og slå av en prat der ... :) </li>
+      </ul>
+
+    </div>
+  </div>
+  <script>
+
+  </script>
   </div>
 </body>
 
