@@ -8,45 +8,62 @@
 
   <link rel="stylesheet" href="stil.css">
 
+  <script>
+    function myFunction(elmnt) {
+      elmnt.scrollTo({
+        top: 600,
+        left: 100,
+        behavior: 'smooth'
+      });
+    }
+  </script>
 </head>
 
-<body onload="">
+<body>
+  <div id="start">
+    <div id="meny_boks">
+      <div id="meny_circle">
+        <div id="meny_border_1">
+          <div id="meny_border_2"></div>
+        </div>
+      </div>
+      <div class="meny">
+        <ul>
+          <li><a href="#">Start</a></li>
+          <li><a href="#">Arbeider</a></li>
+          <li><a href="#">Programmering</a></li>
+          <li><a href="#">Foto</a></li>
+          <li><a href="#">Kontakt</a></li>
+        </ul>
+      </div>
+    </div>
 
-  <div id="meny_boks">
-    <div id="meny_circle">
-      <div id="meny_border_1">
-      <div id="meny_border_2"></div></div>
+    <div id="main">
+      <h1>Portfolio</h1>
+      <div class="circle_shape"></div>
+
+      <p onclick="myFunction(this)">Click to scroll</p>
+
+      <div class="mengdetekst">
+
+        <p>Her skal det stå masse informasjon om meg, hva jeg driver med, hva jeg liker å jobbe med, og hva jeg synes jeg er god til. Hvis vi er heldige med været, så kan vi øve litt på drageløping også!
+          Her skal det stå masse informasjon om meg, hva jeg driver med, hva jeg liker å jobbe med, og hva jeg synes jeg er god til. Hvis vi er heldige med været, så kan vi øve litt på drageløping også!</p>
+
+        <p>Her skal det stå masse informasjon om meg, hva jeg driver med, hva jeg liker å jobbe med, og hva jeg synes jeg er god til. Hvis vi er heldige med været, så kan vi øve litt på drageløping også!</p>
+
+        <div class="dino"><img src="bilder/dino.png" alt="dino"></div>
+      </div>
+      <div id="arbeider">
+        <h1>Arbeider</h1>
+        <img src="bilder/selvportrett.svg">
+      </div>
+      <div id="programmering">
+        <h1>Programmering</h1>
+        <img src="bilder/selvportrett.svg">
+      </div>
     </div>
-    <div class="meny">
-      <ul>
-        <li class="active">Start</li>
-        <li><a href="arbeider.html">Arbeider</a></li>
-        <li><a href="#">Programmering</a></li>
-        <li><a href="#">Foto</a></li>
-        <li><a href="#">Kontakt</a></li>
-      </ul>
-    </div>
+    <script src="script.js"></script>
   </div>
-
-  <div id="main">
-    <h1>Portfolio</h1>
-    <img src="" alt="">
-    <!-- Her kommer menyen -->
-    <!-- CSS gjør om denne lista til en fin meny -->
-    <div class="circle_shape"></div>
-
-
-    <div class="mengdetekst">
-
-      <p>Her skal det stå masse informasjon om meg, hva jeg driver med, hva jeg liker å jobbe med, og hva jeg synes jeg er god til. Hvis vi er heldige med været, så kan vi øve litt på drageløping også!
-        Her skal det stå masse informasjon om meg, hva jeg driver med, hva jeg liker å jobbe med, og hva jeg synes jeg er god til. Hvis vi er heldige med været, så kan vi øve litt på drageløping også!</p>
-
-      <p>Her skal det stå masse informasjon om meg, hva jeg driver med, hva jeg liker å jobbe med, og hva jeg synes jeg er god til. Hvis vi er heldige med været, så kan vi øve litt på drageløping også!</p>
-
-      <div class="dino"><img src="bilder/dino.png" alt="dino"></div>
-    </div>
-  </div>
-  <script src="script.js"></script>
 </body>
 
 </html>
