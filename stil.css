@@ -101,7 +101,9 @@ h1 {
 }
 
 #arbeider, #kontakt,#programmering,#foto,#start{
-  height: 600px;
+  height: 700px;
+  background:#dbb;
+  padding-top: 50px;
 }
 
 .meny {
@@ -196,4 +198,15 @@ a {
   20%  { transform: rotate(-30deg) }
   40% { transform: rotate(90deg) }
   100% {transform: rotate(0deg) }
+}
+#kontakt{
+  padding-top: 100px;
+  max-width: 400px;
+  margin: auto;
+  background-color: #caa;
+  align-items: center;
+}
+#kontakt ul li{
+  margin-bottom: 10px;
+  list-style-type: square;
 }
