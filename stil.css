@@ -3,7 +3,8 @@
 
 body {
   background-color: #8bc;
-  margin-top: 50px;
+  margin: 0;
+  padding: 0;
 }
 * {
 	scroll-behavior: smooth;
@@ -22,23 +23,22 @@ h1 {
 }
 
 #main {
+    position: relative;
   background-color: #b0f4d0;
   padding: 50px;
   width: 600px;
   height: 600px;
-  margin: 80px auto 0;
+  margin: 80px auto;
   border-radius: 50%;
   text-align: center;
-  position: relative;
   overflow: hidden;
-
 }
 
 #meny_boks{
   position: absolute;
   margin-left: 50%;
   top: 20px;
-  left: -600px;
+  left: 20px;
   width: 400px;
   z-index: 1;
   /* background-color: #ccd; */
@@ -100,10 +100,31 @@ h1 {
   transform: translate(-50%);
 }
 
-#arbeider, #kontakt,#programmering,#foto,#start{
+#arbeider, #kontakt,#programmering,#start{
   height: 700px;
   background:#dbb;
   padding-top: 50px;
+}
+#kontakt{
+  padding-top: 100px;
+  max-width: 400px;
+  margin: auto;
+  background-color: #caa;
+  align-items: center;
+}
+#kontakt ul li{
+  margin-bottom: 10px;
+  list-style-type: square;
+}
+#foto{
+  position: relative;
+  top: 0;
+  left: 0;
+  /* margin-top: 50px; */
+  margin: auto;
+  height:700px;
+  width: 2400px;
+  border: 2px dashed white;
 }
 
 .meny {
@@ -166,6 +187,24 @@ a {
   text-align: center;
 }
 
+/*fotoboks er plassen hvert bilde har inne i 'foto' */
+.fotoboks{
+  position: relative;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  /* float: left; */
+  margin: auto;
+  margin-top: 10px;
+  border: 2px dotted blue;
+  width: 500px;
+  height: 600px;
+}
+
+.fotoboks img {
+  max-width: 300px;
+}
+
 /* .circle_shape {
   position: static;
   float: left;
@@ -198,22 +237,4 @@ a {
   20%  { transform: rotate(-30deg) }
   40% { transform: rotate(90deg) }
   100% {transform: rotate(0deg) }
-}
-#kontakt{
-  padding-top: 100px;
-  max-width: 400px;
-  margin: auto;
-  background-color: #caa;
-  align-items: center;
-}
-#kontakt ul li{
-  margin-bottom: 10px;
-  list-style-type: square;
-}
-#foto{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 2400px;
-
 }
