@@ -37,8 +37,9 @@ h1 {
 #meny_boks{
   position: absolute;
   margin-left: 50%;
-  top: 20px;
-  left: 20px;
+  margin-top: 0;
+  top: 50px;
+  left: -520px;
   width: 400px;
   z-index: 1;
   /* background-color: #ccd; */
@@ -102,6 +103,8 @@ h1 {
 
 #arbeider, #kontakt,#programmering,#start{
   height: 700px;
+  width: 600px;
+  margin: auto;
   background:#dbb;
   padding-top: 50px;
 }
