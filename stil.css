@@ -22,6 +22,10 @@ h1 {
 }
 
 #main {
+  position: relative;
+  overflow: hidden;
+  top:0;
+  left:0;
   background-color: #b0f4d0;
   padding: 50px;
   width: 600px;
@@ -29,8 +33,8 @@ h1 {
   margin: 80px auto 0;
   border-radius: 50%;
   text-align: center;
-  position: relative;
-  overflow: hidden;
+
+
 
 }
 
@@ -92,7 +96,7 @@ h1 {
 }
 
 #main_arbeider{
-  witdh:500;
+  witdh:500px;
   margin-left: 50%;
   border:2px solid #444;
   padding:30px;
@@ -100,7 +104,7 @@ h1 {
   transform: translate(-50%);
 }
 
-#arbeider, #kontakt,#programmering,#foto,#start{
+#arbeider, #kontakt,#programmering,#foto_main,#start{
   height: 700px;
   background:#dbb;
   padding-top: 50px;
@@ -210,10 +214,34 @@ a {
   margin-bottom: 10px;
   list-style-type: square;
 }
-#foto{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+#foto_main{
+position: relative;
+top: 0;
+left: 0;
+background: #fcc;
+border:2px dotted green;
   width: 2400px;
+  overflow-y: scroll;
+}
+.fotoboks{
+position: relative;
+display: block;
+float: left;
+  width: 400px;
+  height:400px;
+  margin: auto;
+  margin-top: 100px;
+  padding: 20px;
+  border: 2px dashed red;
+
+}
+.fotoknapp{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  padding: 5px;
+  display: block;
+  background: #5A5;
 
 }
