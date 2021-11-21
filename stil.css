@@ -3,7 +3,8 @@
 
 body {
   background-color: #8bc;
-  margin-top: 50px;
+  margin: 0;
+  padding: 0;
 }
 * {
 	scroll-behavior: smooth;
@@ -30,19 +31,18 @@ h1 {
   padding: 50px;
   width: 600px;
   height: 600px;
-  margin: 80px auto 0;
+  margin: 80px auto;
   border-radius: 50%;
   text-align: center;
-
-
-
+  overflow: hidden;
 }
 
 #meny_boks{
   position: absolute;
   margin-left: 50%;
-  top: 20px;
-  left: -600px;
+  margin-top: 0;
+  top: 50px;
+  left: -520px;
   width: 400px;
   z-index: 1;
   /* background-color: #ccd; */
@@ -106,8 +106,31 @@ h1 {
 
 #arbeider, #kontakt,#programmering,#foto_main,#start{
   height: 700px;
+  width: 600px;
+  margin: auto;
   background:#dbb;
   padding-top: 50px;
+}
+#kontakt{
+  padding-top: 100px;
+  max-width: 400px;
+  margin: auto;
+  background-color: #caa;
+  align-items: center;
+}
+#kontakt ul li{
+  margin-bottom: 10px;
+  list-style-type: square;
+}
+#foto{
+  position: relative;
+  top: 0;
+  left: 0;
+  /* margin-top: 50px; */
+  margin: auto;
+  height:700px;
+  width: 2400px;
+  border: 2px dashed white;
 }
 
 .meny {
@@ -168,6 +191,24 @@ a {
 
 .arbeider{
   text-align: center;
+}
+
+/*fotoboks er plassen hvert bilde har inne i 'foto' */
+.fotoboks{
+  position: relative;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  /* float: left; */
+  margin: auto;
+  margin-top: 10px;
+  border: 2px dotted blue;
+  width: 500px;
+  height: 600px;
+}
+
+.fotoboks img {
+  max-width: 300px;
 }
 
 /* .circle_shape {
