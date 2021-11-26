@@ -23,7 +23,10 @@ h1 {
 }
 
 #main {
-    position: relative;
+  position: relative;
+  overflow: hidden;
+  top:0;
+  left:0;
   background-color: #b0f4d0;
   padding: 50px;
   width: 600px;
@@ -93,7 +96,7 @@ h1 {
 }
 
 #main_arbeider{
-  witdh:500;
+  witdh:500px;
   margin-left: 50%;
   border:2px solid #444;
   padding:30px;
@@ -101,7 +104,7 @@ h1 {
   transform: translate(-50%);
 }
 
-#arbeider, #kontakt,#programmering,#start{
+#arbeider, #kontakt,#programmering,#foto_main,#start{
   height: 700px;
   width: 600px;
   margin: auto;
@@ -240,4 +243,46 @@ a {
   20%  { transform: rotate(-30deg) }
   40% { transform: rotate(90deg) }
   100% {transform: rotate(0deg) }
+}
+#kontakt{
+  padding-top: 100px;
+  max-width: 400px;
+  margin: auto;
+  background-color: #caa;
+  align-items: center;
+}
+#kontakt ul li{
+  margin-bottom: 10px;
+  list-style-type: square;
+}
+#foto_main{
+position: relative;
+top: 0;
+left: 0;
+background: #fcc;
+border:2px dotted green;
+  width: 2400px;
+  overflow-y: scroll;
+}
+.fotoboks{
+position: relative;
+display: block;
+float: left;
+  width: 400px;
+  height:400px;
+  margin: auto;
+  margin-top: 100px;
+  padding: 20px;
+  border: 2px dashed red;
+
+}
+.fotoknapp{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  padding: 5px;
+  display: block;
+  background: #5A5;
+
 }

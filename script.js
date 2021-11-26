@@ -16,3 +16,6 @@ anim.addEventListener("mouseenter", function(event) {
     my_target_2.style.animation="";
   }, 2500);
 }, false);
+
+
+klikker.addEventListener("click", funct)
