@@ -22,15 +22,16 @@ let x=0;
 
 for (var i = 0; i < klikke.length; i++) {
   klikke[i].addEventListener("click", function() {
-    console.log(this.innerHTML);
+    console.log("Jeg blir klikket! Og mitt nummer = " + i );
     let x=this.dataset.x;
+    let y=this.dataset.y;
     console.log("data-x = "+ x);
+    window.main.scrollTo(x,y);
     if (this.style.backgroundColor == 'yellow') {
-      console.log("Yep, yellow!");
-      window.main.scrollTo(1300,1220);
+      // console.log("Yep, yellow!");
       this.style.backgroundColor = 'transparent';
     } else {
-      console.log("Has to be yellow!!!");
+      // console.log("Has to be yellow!!!");
       this.style.backgroundColor = 'yellow';
     }
     // Wow!! Dette er stort. 'this' gir full tilgang til hele elementet jeg akkurat har klikket på!!!

@@ -32,9 +32,9 @@ h1 {
   width: 600px;
   height: 600px;
   margin: 80px auto;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   text-align: center;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 #meny_boks{
@@ -190,21 +190,21 @@ a {
 }
 
 .arbeider{
-  text-align: center;
+  /* text-align: center; */
 }
 
 /*fotoboks er plassen hvert bilde har inne i 'foto' */
 .fotoboks{
-  position: relative;
-  top: 0;
-  left: 0;
-  display: inline-block;
-  /* float: left; */
-  margin: auto;
-  margin-top: 10px;
-  border: 2px dotted blue;
-  width: 500px;
-  height: 600px;
+  position:relative;
+  top:0;
+  left:0;
+  display: block;
+  float: left;
+  margin:30px;
+  margin-top:10px;
+  border:2px dotted blue;
+  width:500px;
+  height:600px;
 }
 
 .fotoboks img {
@@ -245,10 +245,10 @@ a {
   100% {transform: rotate(0deg) }
 }
 #kontakt{
-  padding-top: 100px;
-  max-width: 400px;
-  margin: auto;
-  background-color: #caa;
+  padding-top:100px;
+  max-width:400px;
+  margin:auto;
+  background-color:#caa;
   align-items: center;
 }
 #kontakt ul li{
@@ -257,25 +257,14 @@ a {
 }
 #foto_main{
 position: relative;
+margin: 0;
 top: 0;
 left: 0;
-background: #fcc;
-border:2px dotted green;
-  width: 2400px;
-  overflow-y: scroll;
+background:#fcc;
+border:5px dotted green;
+width:2400px;
 }
-.fotoboks{
-position: relative;
-display: block;
-float: left;
-  width: 400px;
-  height:400px;
-  margin: auto;
-  margin-top: 100px;
-  padding: 20px;
-  border: 2px dashed red;
 
-}
 .fotoknapp{
   position: absolute;
   top: 0;
