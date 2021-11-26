@@ -32,20 +32,19 @@ h1 {
   width: 600px;
   height: 600px;
   margin: 80px auto;
-  /* border-radius: 50%; */
+  border-radius: 50%;
   text-align: center;
   overflow: scroll;
 }
 
 #meny_boks{
   position: absolute;
-  margin-left: 50%;
-  margin-top: 0;
-  top: 50px;
-  left: -520px;
+  top: 0px;
+  left: 0px;
   width: 400px;
   z-index: 1;
   /* background-color: #ccd; */
+  border: 1px dashed grey;
 }
 
 #meny_boks_alt{
@@ -95,16 +94,9 @@ h1 {
   transform-origin: center right;
 }
 
-#main_arbeider{
-  witdh:500px;
-  margin-left: 50%;
-  border:2px solid #444;
-  padding:30px;
-  border-radius: 30px;
-  transform: translate(-50%);
-}
 
-#arbeider, #kontakt,#programmering,#foto_main,#start{
+
+#arbeider, #programmering,#foto_main,#start{
   height: 700px;
   width: 600px;
   margin: auto;
@@ -112,16 +104,23 @@ h1 {
   padding-top: 50px;
 }
 #kontakt{
+  height: 700px;
   padding-top: 100px;
-  max-width: 400px;
+  width: 100%;
   margin: auto;
   background-color: #caa;
-  align-items: center;
+}
+
+#kontakt ul{
+  max-width: 400px;
+  text-align: center;
+  margin: auto;
 }
 #kontakt ul li{
   margin-bottom: 10px;
   list-style-type: square;
 }
+
 #foto{
   position: relative;
   top: 0;
@@ -244,17 +243,9 @@ a {
   40% { transform: rotate(90deg) }
   100% {transform: rotate(0deg) }
 }
-#kontakt{
-  padding-top:100px;
-  max-width:400px;
-  margin:auto;
-  background-color:#caa;
-  align-items: center;
-}
-#kontakt ul li{
-  margin-bottom: 10px;
-  list-style-type: square;
-}
+
+
+
 #foto_main{
 position: relative;
 margin: 0;
