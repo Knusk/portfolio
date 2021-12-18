@@ -8,44 +8,83 @@
 
   <link rel="stylesheet" href="stil.css">
 
+
+  </script>
+
 </head>
 
 <body>
 
   <div id="meny_boks">
     <div id="meny_circle">
-      <div id="meny_border"></div>
+      <div id="meny_border_1">
+        <div id="meny_border_2"></div>
+      </div>
     </div>
     <div class="meny">
       <ul>
-        <li class="active">Start</li>
-        <li><a href="#">Illustrasjon</a></li>
-        <li><a href="#">Programmering</a></li>
-        <li><a href="#">Foto</a></li>
-        <li><a href="#">Kontakt</a></li>
+        <li><a href="#start">Start</a></li>
+        <li><a href="#arbeider">Arbeider</a></li>
+        <li><a href="#programmering">Programmering</a></li>
+        <li><a href="#foto_main">Foto</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
       </ul>
     </div>
   </div>
 
   <div id="main">
-    <h1>Portfolio</h1>
-    <img src="" alt="">
-    <!-- Her kommer menyen -->
-    <!-- CSS gjør om denne lista til en fin meny -->
-    <div class="circle_shape"></div>
+    <div id="start">
+      <h1>Portfolio</h1>
+      <div class="circle_shape"></div>
+      <div class="mengdetekst">
 
+        <p class="klikker" data-x="200" data-y="200">Her skal det stå masse informasjon om meg, hva jeg driver med, hva jeg liker å jobbe med, og hva jeg synes jeg er god til. Hvis vi er heldige med været, så kan vi øve litt på drageløping også!
+          Her skal det stå masse informasjon om meg, hva jeg driver med, hva jeg liker å jobbe med, og hva jeg synes jeg er god til. Hvis vi er heldige med været, så kan vi øve litt på drageløping også!</p>
 
-    <div class="mengdetekst">
-
-      <p>Her skal det stå masse informasjon om meg, hva jeg driver med, hva jeg liker å jobbe med, og hva jeg synes jeg er god til. Hvis vi er heldige med været, så kan vi øve litt på drageløping også!
-        Her skal det stå masse informasjon om meg, hva jeg driver med, hva jeg liker å jobbe med, og hva jeg synes jeg er god til. Hvis vi er heldige med været, så kan vi øve litt på drageløping også!</p>
-
-      <p>Her skal det stå masse informasjon om meg, hva jeg driver med, hva jeg liker å jobbe med, og hva jeg synes jeg er god til. Hvis vi er heldige med været, så kan vi øve litt på drageløping også!</p>
-
+        <p class="klikker" data-x="300" data-y="300">Hvis jeg klikker på denne teksten? Her skal det stå masse informasjon om meg, hva jeg driver med, hva jeg liker å jobbe med, og hva jeg synes jeg er god til. Hvis vi er heldige med været, så kan vi øve litt på drageløping også!</p>
+      </div>
       <div class="dino"><img src="bilder/dino.png" alt="dino"></div>
     </div>
+    <div id="arbeider">
+      <h2>Arbeider</h1>
+        <img src="bilder/selvportrett.svg">
+    </div>
+    <div id="programmering">
+      <h2>Programmering</h1>
+        <img src="bilder/selvportrett.svg">
+    </div>
+    <div id="foto_main">
+      <h2>Foto</h1>
+        <div class="fotoboks">
+          <a class="fotoknapp klikker" data-x="500" data-y="2300" href="#">Neste</a>
+          <img class="foto" id="bilde_1" src="bilder/selvportrett.svg">
+        </div>
+
+        <div class="fotoboks">
+            <a class="fotoknapp klikker" data-x="1000" data-y="2300" href="#">Neste</a>
+          <img class="foto" id="bilde_2" src="bilder/selvportrett.svg">
+        </div>
+
+        <div class="fotoboks">
+          <a class="fotoknapp klikker" data-x="0" data-y="2300" href="#">Tilbake</a>
+          <img class="foto" id="bilde_3" src="bilder/selvportrett.svg">
+        </div>
+    </div>
+    <div id="kontakt">
+      <h2>Kontakt</h2>
+      <ul>
+        <li>For å kontakte meg kan du sende meg en e-post på knut-einar at rsd punktum no</li>
+        <li>Eller så kan du ringe meg på 48009816</li>
+        <li>Eller så kan du komme til Kåres vei 2, 1456 Nesoddtangen, og slå av en prat der ... :) </li>
+      </ul>
+
+    </div>
   </div>
-  <script src="script.js"></script>
+  <script>
+
+  </script>
+  </div>
+  <script type="text/javascript" src="script_alt.js"></script>
 </body>
 
 </html>
